@@ -37,7 +37,7 @@ esquinas = cv2.dilate(
 resultado = imagen.copy()
 
 # Umbral para identificar esquinas
-umbral = 0.01 * esquinas.max()
+umbral = 0.05 * esquinas.max()
 
 # Marcar esquinas
 resultado[esquinas > umbral] = [0, 0, 255]
